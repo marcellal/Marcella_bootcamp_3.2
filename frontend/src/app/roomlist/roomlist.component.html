@@ -1,0 +1,19 @@
+<h1>Room List</h1>
+<table class="table table-bordered">
+  <tr>
+    <th>RoomID</th>
+    <th>RoomType</th>
+    <th>Price</th>
+    <th>Booking</th> 
+  </tr>
+  <tr *ngFor="let o of data; let i = index">
+    <td>{{o.RoomID}}</td>
+    <td>{{o.RoomType}}</td>
+    <td>{{o.Price}}</td>
+    <td >
+      <button type="button" (click)="booking(i)" >Book Now</button>
+    </td>
+  </tr>
+  
+</table>
+
